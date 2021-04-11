@@ -1,5 +1,5 @@
 {
-  "name": "safe-event-emitter",
+  "name": "json-rpc-safe",
   "version": "2.0.0",
   "description": "An EventEmitter that isolates the emitter from errors in handlers",
   "main": "index.js",
