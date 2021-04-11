@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "declaration": true,
+    "outDir": "lib",
+    "rootDir": "src",
     "module": "CommonJS",
     "sourceMap": true,
     "strict": true,
-    "target": "ES2017"
+    "target": "es2018"
   },
-  "include": [
-    "./**/*.ts"
+  "exclude": ["src/index.test.ts"],
+   "include": [
+    "./src/**/*.ts"
   ]
 }

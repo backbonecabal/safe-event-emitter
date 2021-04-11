@@ -1,5 +1,5 @@
 {
-  "name": "@metamask/safe-event-emitter",
+  "name": "safe-event-emitter",
   "version": "2.0.0",
   "description": "An EventEmitter that isolates the emitter from errors in handlers",
   "main": "index.js",
@@ -13,25 +13,22 @@
     "index.js.map"
   ],
   "scripts": {
-    "prepublishOnly": "yarn build",
-    "build": "tsc --project .",
-    "test": "jest",
-    "lint": "eslint . --ext .ts,.js"
+    "prepublishOnly": "npm run build",
+    "build": "npx tsc --project .",
+    "test": "npx jest -u",
+    "lint": "npx eslint . --ext .ts,.js"
   },
-  "author": "",
+  "author": "SEE CONTRIBUTORS",
   "license": "ISC",
   "devDependencies": {
     "@metamask/eslint-config": "^3.1.0",
     "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.21",
-    "@typescript-eslint/eslint-plugin": "^2.20.0",
-    "@typescript-eslint/parser": "^2.16.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jest": "^23.6.0",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.4.0",
-    "typescript": "^4.0.5"
-  },
-  "dependencies": {}
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "eslint": "^7.24.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.4"
+  }
 }
