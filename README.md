@@ -1,4 +1,6 @@
-# safe-event-emitter
+# json-rpc-safe
+
+> fork of  `safe-event-emitter`
 
 
 
@@ -9,13 +11,13 @@ The API is the same as a core [`EventEmitter`](https://nodejs.org/api/events.htm
 ### Install
 
 ```bash
-$ yarn add 'safe-event-emitter'
+npm i json-rpc-safe
 ```
 
 ### Usage
 
 ```js
-import SafeEventEmitter from 'safe-event-emitter';
+import SafeEventEmitter from 'json-rpc-safe';
 
 const ee = new SafeEventEmitter();
 ee.on('boom', () => { throw new Error(); });
